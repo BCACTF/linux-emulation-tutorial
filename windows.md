@@ -59,6 +59,7 @@ Does that seem like a lot of work?
 You can create an alias for that command.
 Type `alias name="cd path"`, where `name` is the name of your alias and `path` is the path your want to alias to.
 Then when you type `name` (or whatever you used) into the terminal, it will run the `cd path` command.
+
 To persist this change, add it to your bash config with `nano ~/.bashrc`.
 Use the arrow keys to scroll to the bottom of the file, and add that alias command.
 Save and close by hitting `Ctrl-X` and `Y`.
