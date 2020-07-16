@@ -3,7 +3,7 @@ In this tutorial, we'll show you to how run Linux on a Mac.
 
 macOS is already based on UNIX, so it runs many of the same commands as Linux. But macOS and Linux are still very different; it's impossible to take a Linux program and run it on macOS without large code changes.
 
-Linux itself is an open-source operating system. Some of you may know it as the "hacker" OS or as a very nerdy piece of software, but it is actually used to power the majority of the world's websites and servers. Some interact with Linux over a graphical interface like you may be used to, but most use a text-based interface, like the terminal you'll be using in this tutorial. In fact, many of our CTF problems run on Linux, and our binary exploitation problems are Linux programs!
+Linux itself is an open-source operating system. Some of you may know it as the "hacker" OS or as a very nerdy piece of software, but it is actually used to power the majority of the world's websites and servers. Some interact with Linux over a graphical interface like you may be used to, but others use a text-based interface, like the terminal you'll be using in this tutorial. In fact, many of our CTF problems run on Linux, and our binary exploitation problems are Linux programs!
 
 Using a technology called [Docker](https://www.docker.com), we can run a Linux container on a Mac computer. This will let you take a deeper look into some CTF problems, particularly those in the binary exploitation category.
 
@@ -57,14 +57,34 @@ You should now be in the Linux shell, and you can type Linux commands and run Li
 
 ### Sharing Files Between Linux and Mac
 
-**On your Mac:** Move any files that you want to share into the Linux file on your desktop. Access them in Linux by typing `cd /mac`.
+**On your Mac:** Move any files that you want to share into the Linux folder on your desktop.
 **On Linux:** Create and access shared files in **/mac**. Get to it by typing `cd /mac`.
 
 ![Terminal and Finder window demonstrating a shared myfile.txt file](images/mac-terminal-sharing.png)
 
 If you delete the Linux folder on your desktop, re-create it to run your Linux environment again.
 
-### Exitting Linux
+### Downloading Files via the Command Line
+
+You can share files between your Mac and Linux environments, but you can also download files directly from Linux with a tool called `curl`.
+To install curl, paste this command into your Linux environment:
+```
+apt update -y && apt install curl -y
+```
+
+You can now use curl with the command
+```
+curl -O url
+```
+where `url` is (you guessed it) the URL of the file you want to download.
+
+For example, if you hypotheically wanted to download the file `http://static.bcactf.com/camp2020/file.txt`, you would use:
+```
+curl -O http://static.bcactf.com/camp2020/file.txt
+```
+which would download the file `file.txt` into your current directory.
+
+### Exiting Linux
 
 ![Terminal with a running Linux container](images/mac-terminal.png)
 
@@ -82,6 +102,6 @@ To uninstall Docker:
 ![Docker troubleshooting settings with bug icon and uninstall button highlighted](images/mac-uninstall.png)
 
 ## Help! I'm Stuck!
-Feel free to contact the CS Camp CTF staff over email and we'll help you figure out any problems you may run into.
+Feel free to contact the CS Camp CTF staff, and we'll help you figure out any problems you may run into.
 
 Enjoy CS Camp, and have a nice summer!

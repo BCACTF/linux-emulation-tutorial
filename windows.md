@@ -26,7 +26,7 @@ The aptly named tool ~~Linux Subsystem for Windows~~ Windows Subsystem for Linux
 
 1. Reboot your computer.
 
-1. Install WSL from the [windows store](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6).
+1. Install WSL from the [Windows Store](https://www.microsoft.com/en-us/p/ubuntu-1804-lts/9n9tngvndl3q).
     When it finishes installing, you should see a "Launch" button.
     Yeah, go ahead and click on that.
 
@@ -44,11 +44,11 @@ The aptly named tool ~~Linux Subsystem for Windows~~ Windows Subsystem for Linux
 
 ## Next Steps
 
-From here, you can follow any Linux tutorial to move around and interact with the Linux environment.
-If you don't know where to start, we recommend [Ryan's Tutorials](https://ryanstutorials.net/linuxtutorial).
+You should now be in the Linux shell, and you can type Linux commands and run Linux programs.
+From here, you can follow any Linux tutorial, move around, and interact with the Linux environment.
+If you don't know where to start, we recommend [Ryan's Linux Tutorial](https://ryanstutorials.net/linuxtutorial/).
 
-
-## Accessing Your Existing Files
+### Accessing Your Existing Files
 
 Now, if you've been following along, you might be wondering, "Gee, where are all my files?"
 Your `C:\` drive will be mounted at `/mnt/c`.
@@ -58,11 +58,24 @@ For example, if I wanted to view my desktop folder at `C:\Users\ed\Desktop`, I c
 Does that seem like a lot of work?
 You can create an alias for that command.
 Type `alias name="cd path"`, where `name` is the name of your alias and `path` is the path your want to alias to.
-Then when you type `name` into the terminal, it will run the `cd path` command.
+Then when you type `name` (or whatever you used) into the terminal, it will run the `cd path` command.
 To persist this change, add it to your bash config with `nano ~/.bashrc`.
 Use the arrow keys to scroll to the bottom of the file, and add that alias command.
 Save and close by hitting `Ctrl-X` and `Y`.
 Now, when you open a new WSL terminal, you'll have the alias for quick movement!
+
+### Downloading Files via the Command Line
+
+You can access your Windows files from Linux, but you can also download files directly from Linux with a tool called `curl`.
+To install curl, paste the command `sudo apt update -y && sudo apt install curl -y` into your Linux environment.
+You will need to enter the password that you created earlier.
+
+You can now use curl by typing in `curl -O url` where `url` is (you guessed it) the URL of the file you want to download.
+For example, if you hypotheically wanted to download the file `http://static.bcactf.com/camp2020/file.txt`, you would use `curl -O http://static.bcactf.com/camp2020/file.txt`, which would download the file `file.txt` into your current directory.
+
+### Exiting Linux
+
+When you are done, type `exit` or hit `Ctrl-D` to exit WSL.
 
 ## Help! I'm Stuck!
 
