@@ -1,6 +1,6 @@
 # Running Linux on Windows/Mac
 
-This tutorial is divided into which operating system you're using.
+This tutorial is divided based on which operating system you're using.
 
 * [I have a Windows!](windows)
 * [I have a Mac!](mac)
