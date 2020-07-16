@@ -67,12 +67,12 @@ Now, when you open a new WSL terminal, you'll have the alias for quick movement!
 
 ### Downloading Files via the Command Line
 
-You can access your Windows files from Linux, but you can also download files directly from Linux with a tool called `curl`.
-To install curl, paste the command `sudo apt update -y && sudo apt install curl -y` into your Linux environment.
+You can access your Windows files from Linux, but you can also download files directly from Linux with a tool called `wget`.
+To install wget, paste the command `sudo apt update -y && sudo apt install wget -y` into your Linux environment.
 You will need to enter the password that you created earlier.
 
-You can now use curl by typing in `curl -O url` where `url` is (you guessed it) the URL of the file you want to download.
-For example, if you hypotheically wanted to download the file `http://static.bcactf.com/camp2020/file.txt`, you would use `curl -O http://static.bcactf.com/camp2020/file.txt`, which would download the file `file.txt` into your current directory.
+You can now use wget by typing in `wget url` where `url` is (you guessed it) the URL of the file you want to download.
+For example, if you hypotheically wanted to download the file `http://static.bcactf.com/camp2020/file.txt`, you would use `wget http://static.bcactf.com/camp2020/file.txt`, which would download the file `file.txt` into your current directory.
 
 ### Exiting Linux
 

@@ -66,21 +66,21 @@ If you delete the Linux folder on your desktop, re-create it to run your Linux e
 
 ### Downloading Files via the Command Line
 
-You can share files between your Mac and Linux environments, but you can also download files directly from Linux with a tool called `curl`.
-To install curl, paste this command into your Linux environment:
+You can share files between your Mac and Linux environments, but you can also download files directly from Linux with a tool called `wget`.
+To install wget, paste this command into your Linux environment:
 ```
-apt update -y && apt install curl -y
+apt update -y && apt install wget -y
 ```
 
-You can now use curl with the command
+You can now use wget with the command
 ```
-curl -O url
+wget url
 ```
 where `url` is (you guessed it) the URL of the file you want to download.
 
 For example, if you hypotheically wanted to download the file `http://static.bcactf.com/camp2020/file.txt`, you would use:
 ```
-curl -O http://static.bcactf.com/camp2020/file.txt
+wget http://static.bcactf.com/camp2020/file.txt
 ```
 which would download the file `file.txt` into your current directory.
 
