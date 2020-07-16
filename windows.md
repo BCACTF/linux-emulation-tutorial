@@ -26,7 +26,7 @@ The aptly named tool ~~Linux Subsystem for Windows~~ Windows Subsystem for Linux
 
 1. Reboot your computer.
 
-1. Install WSL from the [Windows Store](https://www.microsoft.com/en-us/p/ubuntu-1804-lts/9n9tngvndl3q).
+1. Install [Ubuntu](https://www.microsoft.com/en-us/p/ubuntu-1804-lts/9n9tngvndl3q) from the Windows Store.
     When it finishes installing, you should see a "Launch" button.
     Yeah, go ahead and click on that.
 
