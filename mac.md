@@ -21,9 +21,11 @@ There should now be a Docker icon in the right of the menu bar (at the top of yo
 
 ![Terminal highlighted in the Utilities folder](images/mac-finder.png)
 
+First things first: we'll need a place to share files with our Linux system. To do that, make a new folder on the desktop called **Linux**.
+
 Once Docker has started, open the Terminal application (located in the Utilities folder in Applications) and paste in this command:
 ```
-docker create -it --name mycontainer ubuntu:18.04
+docker create -it --name mycontainer --mount type=bind,source=$HOME/Desktop/Linux,target=/mac ubuntu:18.04
 ```
 (press the return key after pasting this command)
 
@@ -52,6 +54,17 @@ docker attach mycontainer
 ```
 
 You should now be in the Linux shell, and you can type Linux commands and run Linux programs. From here, you can follow any Linux tutorial, move around, and interact with the Linux environment. If you don't know where to start, we recommend [Ryan's Linux Tutorial](https://ryanstutorials.net/linuxtutorial/).
+
+### Sharing Files Between Linux and Mac
+
+**On your Mac:** Move any files that you want to share into the Linux file on your desktop. Access them in Linux by typing `cd /mac`.
+**On Linux:** Create and access shared files in **/mac**. Get to it by typing `cd /mac`.
+
+![Terminal and Finder window demonstrating a shared myfile.txt file](images/mac-terminal-sharing.png)
+
+If you delete the Linux folder on your desktop, re-create it to run your Linux environment again.
+
+### Exitting Linux
 
 ![Terminal with a running Linux container](images/mac-terminal.png)
 
