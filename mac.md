@@ -25,11 +25,11 @@ First things first: we'll need a place to share files with our Linux system. To 
 
 Once Docker has started, open the Terminal application (located in the Utilities folder in Applications) and paste in this command:
 ```
-docker create -it --name mycontainer --mount type=bind,source=$HOME/Desktop/Linux,target=/mac ubuntu:18.04
+docker create -it --name mycontainer --mount type=bind,source=$HOME/Desktop/Linux,target=/mac ubuntu:latest
 ```
 (press the return key after pasting this command)
 
-Docker will then download a copy of Ubuntu 18.04 and create a new container with it.
+Docker will then download a copy of the latest Ubuntu image and create a new container with it.
 
 ![Terminal with a newly created container](images/mac-terminal-setup.png)
 
