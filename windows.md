@@ -77,9 +77,3 @@ For example, if you hypotheically wanted to download the file `http://static.bca
 ### Exiting Linux
 
 When you are done, type `exit` or hit `Ctrl-D` to exit WSL.
-
-## Help! I'm Stuck!
-
-Feel free to contact the CS Camp CTF staff, and we'll help you figure out any problems you might have.
-
-Enjoy CS Camp, and have a nice summer!
