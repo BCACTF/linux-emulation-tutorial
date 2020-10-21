@@ -100,8 +100,3 @@ To uninstall Docker:
 4. Click the **Uninstall** icon.
 
 ![Docker troubleshooting settings with bug icon and uninstall button highlighted](images/mac-uninstall.png)
-
-## Help! I'm Stuck!
-Feel free to contact the CS Camp CTF staff, and we'll help you figure out any problems you may run into.
-
-Enjoy CS Camp, and have a nice summer!
